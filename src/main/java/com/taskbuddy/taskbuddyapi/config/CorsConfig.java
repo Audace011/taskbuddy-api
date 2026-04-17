@@ -30,16 +30,12 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                        // Only these origins are allowed to call the API
-                        .allowedOrigins(
-                                "https://task-buddy-one-rose.vercel.app",  // your live Vercel app
-                                "http://localhost:5173",                   // Vue dev server
-                                "http://localhost:3000"                    // alternative dev port
-                        )
-                        // Allow these HTTP methods
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        // Allow all headers (including Content-Type, Authorization, etc.)
+                registry.addMapping("/**")
+                        // Allow any domain (helps with Vercel's many alias URLs)
+                        .allowedOrigins("*")
+                        // Allow all HTTP methods
+                        .allowedMethods("*")
+                        // Allow all headers
                         .allowedHeaders("*")
                         // Set how long browsers can cache the CORS preflight response
                         .maxAge(3600);
