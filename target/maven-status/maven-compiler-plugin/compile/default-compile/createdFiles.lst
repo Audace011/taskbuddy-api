@@ -1,0 +1,11 @@
+com\taskbuddy\taskbuddyapi\controller\TaskController.class
+com\taskbuddy\taskbuddyapi\config\CorsConfig.class
+com\taskbuddy\taskbuddyapi\repository\TaskRepository.class
+com\taskbuddy\taskbuddyapi\model\Task.class
+com\taskbuddy\taskbuddyapi\model\User.class
+com\taskbuddy\taskbuddyapi\service\TaskService.class
+com\taskbuddy\taskbuddyapi\service\AuthService.class
+com\taskbuddy\taskbuddyapi\repository\UserRepository.class
+com\taskbuddy\taskbuddyapi\TaskbuddyApiApplication.class
+com\taskbuddy\taskbuddyapi\controller\AuthController.class
+com\taskbuddy\taskbuddyapi\config\CorsConfig$1.class
