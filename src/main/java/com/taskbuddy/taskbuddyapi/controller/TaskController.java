@@ -27,6 +27,10 @@ import java.util.Optional;
  */
 @RestController
 @RequestMapping("/api/tasks")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://task-buddy-one-rose.vercel.app"
+})
 public class TaskController {
 
     @Autowired
